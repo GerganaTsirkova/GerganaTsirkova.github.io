@@ -12,7 +12,7 @@ function style() {
         //where to coplile CSS
         .pipe(gulp.dest('./css'))
         //stream changes to all browserSync
-        .pipe(browserSync.stream())
+        .pipe(browserSync.stream());
 }
 
 function watch() {
