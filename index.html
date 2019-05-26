@@ -9,10 +9,37 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Pattaya|Paytone+One|Sansita&display|Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 </head>
+<style>
+    .no-js #loader {
+        display: none;
+    }
+    
+    .js #loader {
+        display: block;
+        position: absolute;
+        left: 100px;
+        top: 0;
+    }
+    
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+    }
+</style>
 
 <body>
     <header>
+        <section class="logo">
+            <a href="/index.html">GT</a>
+        </section>
         <nav class="nav">
             <ul>
                 <li>
@@ -34,45 +61,54 @@
         </nav>
     </header>
     <main>
-        <section class="left-part-page">
-            <section class="logo">
-                <p>GT</p>
+        <section class="about-me">
+            <section class="left-part-page">
+                <section class="social">
+                    <section class="fb">
+                        <a href="https://web.facebook.com/profile.php?id=1371823505" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </section>
+                    <section class="github">
+                        <a href="https://github.com/GerganaTsirkova" target="_blank"><i class="fab fa-github"></i></a>
+                    </section>
+                    <section class="twitter">
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </section>
+                </section>
             </section>
-            <section class="social">
-                <section class="fb">
-                    <i class="fab fa-facebook-f"></i>
+            <section class="top">
+                <section class="left">
+                    <section class="present-text">
+                        <p>Hello! Wellcome to my website!</p>
+                        <hr>
+                        <h1>I'm Gergana Tsirkova</h1>
+                        <p>I am a web developer living in Bulgaria</p>
+                        <p>My passion is creating beautiful and responsive websites</p>
+                    </section>
                 </section>
-                <section class="github">
-                    <i class="fab fa-github"></i>
-                </section>
-                <section class="twitter">
-                    <i class="fab fa-twitter"></i>
+                <section class="right">
+                    <section class="img-container">
+                        <img src="/images/main-pic.jpg" alt="">
+                    </section>
+                    <section class="img-container">
+                        <img src="/images/main-pic-two.jpg" alt="">
+                    </section>
                 </section>
             </section>
         </section>
-        <section class="top">
-            <section class="left">
-                <section class="present-text">
-                    <p>Hello! Wellcome to my webpage!</p>
-                    <hr>
-                    <h1>I'm Gergana Tsirkova</h1>
-                    <p>I am a web developer!</p>
-                    <p>I love to create beautiful and functional websites.</p>
-                </section>
-            </section>
-            <section class="right">
-                <section class="img-container">
-                    <img src="/images/main-pic.jpg" alt="">
-                </section>
-                <section class="img-container">
-                    <img src="/images/main-pic-two.jpg" alt="">
-                </section>
-            </section>
+        <section class="education">
+
         </section>
     </main>
     <footer>
 
     </footer>
 </body>
+<div class="se-pre-con"></div>
+<script>
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+</script>
 
 </html>

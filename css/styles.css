@@ -63,14 +63,32 @@ a {
 * {
   padding: 0;
   margin: 0; }
-  *:before, *:after {
-    box-sizing: inherit; }
 
 html {
   box-sizing: border-box; }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+header {
+  display: flex;
+  justify-content: space-between; }
+  header .logo {
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5px solid #EECCDD; }
+    header .logo a {
+      font-size: 2em;
+      color: #EECCDD; }
+      header .logo a:hover, header .logo a:focus {
+        color: white; }
+
 .nav {
-  margin-right: 3em; }
+  margin-right: 6em; }
   .nav ul {
     display: flex;
     justify-content: flex-end; }
@@ -82,7 +100,10 @@ html {
       width: 100%;
       height: 100%;
       color: #442233;
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      border-top: none; }
+      .nav li a:hover, .nav li a:focus {
+        background: white; }
 
 .top {
   width: 100vw;
@@ -143,11 +164,22 @@ html {
   position: fixed;
   border-right: 0.5px solid #EECCDD;
   height: 100%;
-  width: 6em; }
-  .left-part-page .logo {
-    margin-bottom: auto; }
-    .left-part-page .logo p {
-      font-size: 3em; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  width: 6rem;
+  box-sizing: border-box; }
+  .left-part-page a {
+    color: #EECCDD; }
+    .left-part-page a:hover, .left-part-page a:focus {
+      color: white; }
+  .left-part-page .fb,
+  .left-part-page .github {
+    margin-bottom: 2em; }
+  .left-part-page .twitter {
+    margin-bottom: 5em; }
 
 body {
   background: #442233;
