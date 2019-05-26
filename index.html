@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Pattaya|Paytone+One|Sansita&display|Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 </head>
 
 <body>
+    <div class="se-pre-con"></div>
     <header>
         <section class="logo">
             <a href="/">GT</a>
@@ -65,7 +64,7 @@
                 </section>
                 <section class="right images">
                     <section class="img-container">
-                        <img src="/images/main-pic.jpg" alt="">
+                        <img src="/images/main.jpg" alt="">
                     </section>
                     <section class="img-container">
                         <img src="/images/main-pic-two.jpg" alt="">
@@ -80,6 +79,14 @@
     <footer>
 
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script>
+        $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
 </body>
 
 </html>
