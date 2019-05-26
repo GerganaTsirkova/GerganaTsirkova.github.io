@@ -1,4 +1,11 @@
+@import 'typography';
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'buttons';
+@import 'header';
+@import 'top';
 body {
-    background: blueviolet;
+    background: $purple-dark;
     color: white;
 }
