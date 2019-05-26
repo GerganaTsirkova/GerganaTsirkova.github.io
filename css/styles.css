@@ -86,7 +86,7 @@ html {
 
 .top {
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
   display: flex;
   overflow: hidden;
   box-sizing: border-box; }
@@ -139,6 +139,16 @@ html {
       .top .img-container img:hover {
         opacity: 1; }
 
+.left-part-page {
+  position: fixed;
+  border-right: 0.5px solid #EECCDD;
+  height: 100%;
+  width: 6em; }
+  .left-part-page .logo {
+    margin-bottom: auto; }
+    .left-part-page .logo p {
+      font-size: 3em; }
+
 body {
   background: #442233;
-  color: white; }
+  color: #EECCDD; }

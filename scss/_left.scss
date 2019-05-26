@@ -1,0 +1,12 @@
+.left-part-page {
+    position: fixed;
+    border-right: 0.5px solid $pink-super-ligth;
+    height: 100%;
+    width: 6em;
+    .logo {
+        margin-bottom: auto;
+        p {
+            font-size: 3em;
+        }
+    }
+}
