@@ -80,9 +80,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 0.5px solid #EECCDD; }
+    border-right: 0.5px dotted #EECCDD;
+    border-bottom: 0.5px dotted #EECCDD; }
     header .logo a {
-      font-size: 2em;
+      font-size: 2.5em;
       color: #EECCDD; }
       header .logo a:hover, header .logo a:focus {
         color: white; }
@@ -124,6 +125,7 @@ header {
     .top .left .present-text {
       text-align: left; }
       .top .left .present-text > hr {
+        border: 2px solid #EECCDD;
         margin: 2em 0;
         width: 30%; }
       .top .left .present-text h1 {
@@ -162,7 +164,7 @@ header {
 
 .left-part-page {
   position: fixed;
-  border-right: 0.5px solid #EECCDD;
+  border-right: 0.5px dotted #EECCDD;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -201,4 +203,4 @@ body {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url("/images/preloader.gif") center no-repeat #EECCDD; }
+  background: url("/images/preloader.gif") center no-repeat white; }

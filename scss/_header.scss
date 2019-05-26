@@ -6,9 +6,10 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-right: 0.5px solid $pink-super-ligth;
+        border-right: 0.5px dotted $pink-super-ligth;
+        border-bottom: 0.5px dotted $pink-super-ligth;
         a {
-            font-size: 2em;
+            font-size: 2.5em;
             color: $pink-super-ligth;
             &:hover,
             &:focus {
