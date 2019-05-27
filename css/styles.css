@@ -73,9 +73,19 @@ html {
   box-sizing: inherit; }
 
 header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  justify-content: space-between; }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/main.jpg") center center no-repeat;
+  background-size: cover;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
   header .logo {
+    margin-right: auto;
     width: 6rem;
     display: flex;
     justify-content: center;
@@ -89,55 +99,67 @@ header {
         color: white; }
 
 .nav {
-  margin-right: 6em; }
-  .nav ul {
-    display: flex;
-    justify-content: flex-end; }
-  .nav li {
-    background: #EECCDD; }
-    .nav li a {
-      padding: 1.8em;
-      display: block;
-      width: 100%;
-      height: 100%;
-      color: #442233;
-      font-size: 1.2em;
-      border-top: none; }
-      .nav li a:hover, .nav li a:focus {
-        background: white; }
+  margin-right: auto; }
 
-.top {
+.nav ul {
+  display: flex;
+  justify-content: center; }
+
+.nav li {
+  background: #EECCDD; }
+  .nav li a {
+    padding: 1.8em;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #442233;
+    font-size: 1.2em;
+    border-top: none;
+    text-transform: uppercase; }
+    .nav li a:hover, .nav li a:focus {
+      background: white; }
+
+.about-me {
   width: 100vw;
   height: 85vh;
   display: flex;
   overflow: hidden;
   box-sizing: border-box; }
-  .top .left,
-  .top .right {
+  .about-me .left,
+  .about-me .right {
     display: flex;
     flex-direction: column; }
-  .top .left {
-    flex: 2;
-    justify-content: center;
-    align-items: center;
-    padding-right: 4em;
+
+.left {
+  justify-content: center;
+  align-items: center;
+  padding-right: 4em;
+  text-align: left; }
+  .left .present {
     text-align: left; }
-    .top .left .present-text {
-      text-align: left; }
-      .top .left .present-text > hr {
-        border: 2px solid #EECCDD;
-        margin: 2em 0;
-        width: 30%; }
-      .top .left .present-text h1 {
-        margin-bottom: .5em; }
-      .top .left .present-text > p {
-        font-size: 1.5em; }
-  .top .right {
-    flex: 1;
-    height: 100%;
-    justify-content: space-evenly;
-    margin-bottom: 1em; }
-  .top .img-container {
+    .left .present > hr {
+      border: 2px solid #EECCDD;
+      margin: 2em 0;
+      width: 30%; }
+    .left .present h1 {
+      margin-bottom: .5em; }
+    .left .present > p {
+      font-size: 1.5em; }
+    .left .present .social {
+      display: flex;
+      margin: 2em 0; }
+      .left .present .social a {
+        font-size: 2em;
+        margin-right: 2em;
+        color: #EECCDD; }
+        .left .present .social a:hover, .left .present .social a:focus {
+          color: white; }
+
+.right {
+  height: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 1em; }
+  .right .img-container {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -146,11 +168,11 @@ header {
     -webkit-box-shadow: -1px 6px 51px 2px #11090d;
     -moz-box-shadow: -1px 6px 51px 2px #11090d;
     box-shadow: -1px 6px 51px 2px #11090d; }
-    .top .img-container::before {
+    .right .img-container::before {
       content: '';
       display: block;
       padding-top: 56.25%; }
-    .top .img-container img {
+    .right .img-container img {
       position: absolute;
       width: 100%;
       height: auto;
@@ -159,32 +181,10 @@ header {
       transform: translate(-50%, -50%);
       opacity: 0.9;
       filter: alpha(opacity=50); }
-      .top .img-container img:hover {
+      .right .img-container img:hover {
         opacity: 1; }
 
-.left-part-page {
-  position: fixed;
-  border-right: 0.5px dotted #EECCDD;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  width: 6rem;
-  box-sizing: border-box; }
-  .left-part-page a {
-    color: #EECCDD; }
-    .left-part-page a:hover, .left-part-page a:focus {
-      color: white; }
-  .left-part-page .fb,
-  .left-part-page .github {
-    margin-bottom: 2em; }
-  .left-part-page .twitter {
-    margin-bottom: 5em; }
-
 body {
-  background: #442233;
   color: #EECCDD; }
 
 .no-js #loader {

@@ -14,74 +14,18 @@
 <body>
     <div class="se-pre-con"></div>
     <header>
-        <section class="logo">
-            <a href="/">GT</a>
-        </section>
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="#">About me</a>
-                </li>
-                <li>
-                    <a href="#">Education</a>
-                </li>
-                <li>
-                    <a href="#">Certificates</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact me</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <section class="about-me">
-            <section class="left-part-page">
-                <section class="social">
-                    <section class="fb">
-                        <a href="https://web.facebook.com/profile.php?id=1371823505" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    </section>
-                    <section class="github">
-                        <a href="https://github.com/GerganaTsirkova" target="_blank"><i class="fab fa-github"></i></a>
-                    </section>
-                    <section class="twitter">
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </section>
-                </section>
-            </section>
-            <section class="top">
-                <section class="left">
-                    <section class="present-text">
-                        <p>Hello! Wellcome to my website!</p>
-                        <hr>
-                        <h1>I'm Gergana Tsirkova</h1>
-                        <p>I am a web developer living in Bulgaria</p>
-                        <p>My passion is creating beautiful and responsive websites</p>
-                    </section>
-                </section>
-                <section class="right images">
-                    <section class="img-container">
-                        <img src="/images/main.jpg" alt="">
-                    </section>
-                    <section class="img-container">
-                        <img src="/images/main-pic-two.jpg" alt="">
-                    </section>
-                </section>
-            </section>
-        </section>
-        <section class="education">
-
-        </section>
     </main>
     <footer>
-
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script>
+        $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
         $(window).load(function() {
             // Animate loader off screen
             $(".se-pre-con").fadeOut("slow");;
