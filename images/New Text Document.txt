@@ -1,0 +1,23 @@
+<section class="about-me">
+            <section class="left">
+                <section class="present">
+                    <p>Hello! Wellcome to my website!</p>
+                    <hr>
+                    <h1>I'm Gergana Tsirkova</h1>
+                    <p>I am a web developer living in Bulgaria</p>
+                    <p>My passion is creating beautiful and responsive websites</p>
+                    <hr>
+                    <section class="social">
+                        <section class="fb">
+                            <a href="https://web.facebook.com/profile.php?id=1371823505" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        </section>
+                        <section class="github">
+                            <a href="https://github.com/GerganaTsirkova" target="_blank"><i class="fab fa-github"></i></a>
+                        </section>
+                        <section class="twitter">
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
