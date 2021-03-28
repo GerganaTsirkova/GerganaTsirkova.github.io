@@ -1,5 +1,4 @@
 html {
-    box-sizing: border-box;
     font: 14px/1.5 'Sansita', sans-serif;
 }
 
@@ -21,27 +20,26 @@ h6 {
 
 h1 {
     font-size: 3em;
-    font-weight: normal;
 }
 
 h2 {
-    font-size: 2.2em
+    font-size: 2.2em;
 }
 
 h3 {
-    font-size: 1.9em
+    font-size: 1.9em;
 }
 
 h4 {
-    font-size: 1.6em
+    font-size: 1.6em;
 }
 
 h5 {
-    font-size: 1.4em
+    font-size: 1.4em;
 }
 
 h6 {
-    font-size: 1.2em
+    font-size: 1.2em;
 }
 
 ul {
@@ -56,26 +54,26 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:768px) {
     html {
         font-size: 14px;
     }
 }
 
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:992) {
     html {
         font-size: 16px;
     }
 }
 
-@media only screen and (min-width:1040) {
+@media only screen and (min-width:1200px) {
     html {
-        font-size: 18px;
-    }
-}
-
-@media only screen and (min-width:1900px) {
-    html {
-        font-size: 20px;
+        font-size: 17px;
     }
 }
